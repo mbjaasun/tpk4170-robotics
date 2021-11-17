@@ -28,8 +28,8 @@ class BaseLink(Link):
         Object3D.__init__(self)
         mesh = ColladaMesh(dae_path + "base_link.dae", scale=0.001)
         self.add(mesh)
-        # axes = AxesHelper(size=0.1)
-        # self.add(axes)
+        axes = AxesHelper(size=0.1)
+        self.add(axes)
 
 
 class Link1(Link):
@@ -38,8 +38,8 @@ class Link1(Link):
         mesh = ColladaMesh(dae_path + "link_1.dae", scale=0.001)
         self.mesh = mesh
         self.add(mesh)
-        # axes = AxesHelper(size=0.1)
-        # self.add(axes)
+        axes = AxesHelper(size=0.1)
+        self.add(axes)
 
 
 class Link2(Link):
@@ -49,8 +49,8 @@ class Link2(Link):
         mesh.rotateY(np.pi/2)
         self.mesh = mesh
         self.add(mesh)
-        # axes = AxesHelper(size=0.1)
-        # self.add(axes)
+        axes = AxesHelper(size=0.1)
+        self.add(axes)
 
 
 class Link3(Link):
@@ -60,8 +60,8 @@ class Link3(Link):
         mesh.position = (-0.025, 0.0, 0.0)
         self.mesh = mesh
         self.add(mesh)
-        # axes = AxesHelper(size=0.1)
-        # self.add(axes)
+        axes = AxesHelper(size=0.1)
+        self.add(axes)
 
 
 class Link4(Link):
@@ -70,8 +70,8 @@ class Link4(Link):
         mesh = ColladaMesh(dae_path + "link_4.dae", scale=0.001)
         self.mesh = mesh
         self.add(mesh)
-        # axes = AxesHelper(size=0.1)
-        # self.add(axes)
+        axes = AxesHelper(size=0.1)
+        self.add(axes)
 
 
 class Link5(Link):
@@ -79,8 +79,8 @@ class Link5(Link):
         Link.__init__(self)
         mesh = ColladaMesh(dae_path + "link_5.dae", scale=0.001)
         self.add(mesh)
-        # axes = AxesHelper(size=0.1)
-        # self.add(axes)
+        axes = AxesHelper(size=0.1)
+        self.add(axes)
 
 
 class Link6(Link):
@@ -89,5 +89,5 @@ class Link6(Link):
         mesh = ColladaMesh(dae_path + "link_6.dae", scale=0.001)
         self.mesh = mesh
         self.add(mesh)
-        # axes = AxesHelper(size=0.1)
-        # self.add(axes)
+        axes = AxesHelper(size=0.1)
+        self.add(axes)
